@@ -1,0 +1,5 @@
+# Aggiungi (o unisci) in supabase/config.toml
+[functions.jarvis-ai]
+# La funzione verifica da sola il JWT chiamando /auth/v1/user: funziona con chiavi legacy e asimmetriche
+# e restituisce errori tipizzati (auth_invalid). Il gateway invece risponde con un 401 generico.
+verify_jwt = false
